@@ -1,0 +1,17 @@
+
+<h1>결과</h1>
+
+<a href="{%url 'wordcount' %}">다시 세기!</a>
+
+<h2>당신이 입력한 문자의 갯수는 총 {{total}}입니다!</h2>
+
+<h2>당신이 입력한 문장</h2>
+{{text}}
+<br>
+<h2>단어 카운트</h2>
+{% for word,count in dictionary%}
+
+{{word}}:{{count}}
+<br>
+
+{% endfor %}

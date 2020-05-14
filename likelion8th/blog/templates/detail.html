@@ -1,0 +1,14 @@
+
+<h1>Detail page</h1>
+
+<h3>제목:{{blog.title}}</h3>
+
+<hr>
+
+<p>{{blog.pub_date}}</p>
+
+<p>{{blog.body}}</p>
+
+<a href="{%url 'edit' blog.id %}">수정하기</a>
+<a href="{%url 'delete' blog.id %}">삭제하기</a>
+<a href ="{%url 'list'%}"> list </a>
